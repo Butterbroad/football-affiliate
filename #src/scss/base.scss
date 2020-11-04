@@ -13,14 +13,12 @@ body {
 body {
     font-size: 14px;
     font-weight: 400;
-    &.lock {
-        overflow: hidden;
-    }
     background-color: #000;
     background-image: url(../img/bg.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: right bottom;
+    overflow: hidden;
 }
 a {
     text-decoration: none;
@@ -73,3 +71,86 @@ input {
         }
     }
 }
+
+
+.slide {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    &_1 {
+    }
+
+    // .slide__wrapper
+
+    &__wrapper {
+        height: 100%;
+    }
+  
+    // .slide__images
+  
+    &__images {
+    }
+  
+    // .slide__text
+  
+    &__text {
+    }
+  }
+  .images-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    img {
+      display: block;
+      max-width: 100%;
+    }
+    // .images-slide__pic
+  
+    &__pic {
+      position: absolute;
+      // .images-slide__pic_1
+  
+      &_1 {
+        
+      }
+  
+      // .images-slide__pic_2
+  
+      &_2 {
+  
+      }
+  
+      // .images-slide__pic_3
+  
+      &_3 {
+  
+      }
+    }
+  }
+  .text-slide {
+    z-index: 4;
+    // .text-slide__line
+  
+    &__line {
+  
+      // .text-slide__line_1
+  
+      &_1 {
+      }
+  
+      // .text-slide__line_2
+  
+      &_2 {
+      }
+  
+      // .text-slide__line_3
+  
+      &_3 {
+      }
+    }
+  }
+  
