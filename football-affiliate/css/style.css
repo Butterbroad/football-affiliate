@@ -75,10 +75,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   background-color: #000;
-  background-image: url(../img/bg.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: right bottom;
   overflow: hidden;
 }
 
@@ -104,6 +100,18 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100%;
+  position: relative;
+}
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
 }
 
 .page {
@@ -195,6 +203,10 @@ input:focus::placeholder {
 
 .text-slide {
   z-index: 4;
+}
+
+.swiper-pagination-progressbar-fill {
+  background: #0A9F30 !important;
 }
 
 .header {
@@ -464,9 +476,9 @@ input:focus::placeholder {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1560px;
+  max-width: 1260px;
   margin: 0 auto;
-  padding: 0 132px;
+  padding: 0 150px;
   position: relative;
 }
 
@@ -533,9 +545,9 @@ input:focus::placeholder {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1560px;
+  max-width: 1260px;
   margin: 0 auto;
-  padding: 0 132px;
+  padding: 0 150px;
   position: relative;
 }
 
@@ -603,9 +615,9 @@ input:focus::placeholder {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1560px;
+  max-width: 1260px;
   margin: 0 auto;
-  padding: 0 132px;
+  padding: 0 150px;
   position: relative;
 }
 
@@ -669,9 +681,9 @@ input:focus::placeholder {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1560px;
+  max-width: 1260px;
   margin: 0 auto;
-  padding: 0 132px;
+  padding: 0 150px;
   position: relative;
 }
 
@@ -840,5 +852,3 @@ input:focus::placeholder {
 .tabs__content-wrapper::-webkit-scrollbar-thumb {
   background-color: #129A48;
 }
-
-.webp body { background-image: url(../img/bg.webp); }

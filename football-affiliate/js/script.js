@@ -36,11 +36,16 @@ tabTriggers.forEach(trigger => {
 const swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   slidesPerView: 1,
-  spaceBetween: 30,
   mousewheel: true,
+  parallax: true,
+  speed: 1300,
+  loop: false,
+  grabCursor: true,
+  spaceBetween: 300,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-progressbar',
     clickable: true,
+    type: 'progressbar',
   },
 });
 

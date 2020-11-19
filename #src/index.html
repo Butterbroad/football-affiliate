@@ -43,6 +43,7 @@
 		<main class="page">
 			<!-- Swiper -->
 			<div class="swiper-container">
+				<div class="background" style="background-image: url(./img/bg.jpg);" data-swiper-parallax="23%"></div>
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">@@include('_slide1.html')</div>
 					<div class="swiper-slide">@@include('_slide2.html')</div>
@@ -51,15 +52,10 @@
 					<div class="swiper-slide">@@include('_slide5.html')</div>
 					<div class="swiper-slide">@@include('_slide6.html')</div>
 				</div>
-				<!-- Add Pagination -->
-				<div class="swiper-pagination"></div>
+
+				<div class="swiper-progressbar"></div>
+
 			</div>
-			<!-- @@include('_slide1.html')
-			@@include('_slide2.html')
-			@@include('_slide3.html')
-			@@include('_slide4.html')
-			@@include('_slide5.html')
-			@@include('_slide6.html') -->
 		</main>
 
 		@@include('_footer.html')
