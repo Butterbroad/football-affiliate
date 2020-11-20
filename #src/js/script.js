@@ -33,6 +33,7 @@ tabTriggers.forEach(trigger => {
 
 
 //slider
+var menu = ['СЕРИЯ БОНУСОВ', 'БОНУС 100%', '1000$ ЗА ПРОГНОЗ', 'ML ПЛАТИТ/ВЕРНЕТ', '4% CASHBACK', 'УСЛОВИЯ']
 const swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   slidesPerView: 1,
@@ -43,15 +44,13 @@ const swiper = new Swiper('.swiper-container', {
   grabCursor: true,
   spaceBetween: 300,
   pagination: {
-    el: '.swiper-progressbar',
+    el: '.swiper-pagination',
     clickable: true,
-    type: 'progressbar',
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (menu[index]) + '</span>';
+    },
   },
 });
-
-
-
-
 
 
 

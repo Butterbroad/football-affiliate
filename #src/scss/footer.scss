@@ -9,7 +9,23 @@
   &__wrapper {
     display: flex;
     justify-content: center;
-    padding-bottom: 115px;
+    padding-bottom: 70px;
+
+    @media (max-width: 1440px) {
+      padding-bottom: 110px;
+    }
+    @media (min-width: 1439px) and (max-height: 900px) {
+      padding-bottom: 80px;
+    }
+    @media (max-width: 1366px) {
+      padding-bottom: 70px;
+    }
+    @media (max-width: 1280px) {
+      padding-bottom: 40px;
+    }
+    @media (max-width: 1024px) {
+      padding-bottom: 80px;
+    }
   }
 
   // .footer__btn
@@ -42,6 +58,12 @@
       color: #00721D;
       background: #75FF33;
       border: 3px solid #75FF33;
+    }
+
+    @media (max-width: 1366px) {
+      max-width: 286px;
+      height: 51px;
+      font-size: 18px;
     }
   }
 }

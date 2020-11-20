@@ -1,10 +1,5 @@
-html {
+* {
     box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
 }
 html,
 body {
@@ -85,6 +80,7 @@ input {
     overflow: hidden;
     width: 100%;
     position: relative;
+
     &_1 {
     }
 
@@ -114,6 +110,11 @@ input {
     img {
       display: block;
       max-width: 100%;
+    }
+
+    @media (max-width: 2560px) and (min-height: 1439px) {
+        height: 80%;
+        transform: translate(0, 15%);
     }
     // .images-slide__pic
   
@@ -160,6 +161,74 @@ input {
       }
     }
   }
-  .swiper-pagination-progressbar-fill {
+
+.swiper-pagination-progressbar-fill {
     background: #0A9F30 !important;
-  }
+}
+.swiper-pagination {
+    position: absolute;
+    top: 40%;
+    left: 28px !important;
+    width: auto !important;
+    margin-left: 13px;
+    height: 200px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &::before {
+        content: '';
+        position: absolute;
+        right: calc(100% + 8px);
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background: linear-gradient(180deg, rgba(10, 159, 48, 0) 0%, #0A9F30 57.91%, rgba(10, 159, 48, 0) 100%);
+    }
+
+    @media (max-width: 1600px) {
+        top: 10%;
+    }
+    @media (max-width: 1366px) {
+        top: 7%;
+    }
+}
+
+.swiper-pagination-bullet {
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    width: auto;
+    padding: 0 10px;
+    background-color: transparent;
+    height: 31px;
+    opacity: 0.4;
+    outline: transparent;
+    font-size: 13px;
+    line-height: 250.5%;
+    font-family: "Gilroy-Black", sans-serif;
+    font-style: italic;
+    border-radius: 0%;
+    position: relative;
+    transition: all .6s ease;
+    text-align: left;
+    &::before {
+        content: '';
+        width: 13px;
+        height: 1px;
+        background-color: #0A9F30;
+        top: 50%;
+        right: 100%;
+        position: absolute;
+        opacity: 0;
+    }
+}
+.swiper-pagination-bullet-active {
+    color: #4EF200;
+    font-size: 20px;
+    line-height: 166.5%;
+    border: 1px solid #0A9F30;
+    opacity: 1;
+    &::before {
+        opacity: 1;
+    }
+}

@@ -11,6 +11,10 @@
     justify-content: center;
     position: relative;
     padding-top: 60px;
+
+    @media (max-width: 1366px) {
+      padding-top: 50px;
+    }
   }
 
   // .header__logo
@@ -20,6 +24,13 @@
     img {
       max-width: 100%;
       display: block;
+    }
+
+    @media (max-width: 1600px) {
+      max-width: 240px;
+    }
+    @media (max-width: 1366px) {
+      max-width: 156px;
     }
   }
 
@@ -33,6 +44,10 @@
   position: absolute;
   right: 100px;
   bottom: 0;
+
+  @media (max-width: 1024px) {
+    right: 25px;
+  }
 
  		// .lang__items
 
@@ -101,6 +116,7 @@
 		// .lang__item-text
 
 		&__item-text {
+      font-style: italic;
 		}
 }
 
