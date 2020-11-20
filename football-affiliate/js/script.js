@@ -52,7 +52,12 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
-
+const scrollableBlocks = document.querySelectorAll('.tabs__content-wrapper');
+scrollableBlocks.forEach(elem => {
+  elem.addEventListener('mousewheel', function (e) {
+    e.stopPropagation();
+  });
+})
 
 
 function testWebP(callback) {
