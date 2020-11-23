@@ -14,6 +14,17 @@
       max-width: 1025px;
       padding: 0 80px;
     }
+    @media (max-width: 768px) {
+      align-items: flex-start;
+      justify-content: center;
+      padding: 17% 80px;
+    }
+    @media (max-width: 640px) {
+      padding: 20% 40px;
+    }
+    @media (max-width: 425px) {
+      padding: 10% 30px;
+    }
   }
   .images-slide {
     .images-slide__pic_1 {
@@ -33,6 +44,28 @@
       }
       @media (max-width: 1024px) and (min-height: 1365px) {
         top: 25%;
+      }
+      @media (max-width: 800px) {
+        top: 25%;
+        right: -5%;
+      }
+      @media (max-width: 768px) {
+        max-width: 360px;
+        top: 32%;
+        right: 23%;
+      }
+      @media (max-width: 640px) {
+        right: 13%;
+      }
+      @media (max-width: 425px) {
+        max-width: 260px;
+      }
+      @media (max-width: 360px) {
+        top: 25%;
+      }
+      @media (max-width: 320px) {
+        max-width: 193px;
+        top: 30%;
       }
     }
     .images-slide__pic_2 {
@@ -56,6 +89,21 @@
         top: 25%;
         right: -15%;
       }
+      @media (max-width: 800px) {
+        top: 25%;
+        right: -30%;
+      }
+      @media (max-width: 768px) {
+        max-width: 693px;
+        top: 32%;
+        right: 3%;
+      }
+      @media (max-width: 640px) {
+        right: 0;
+      }
+      @media (max-width: 320px) {
+        max-width: 372px;
+      }
     }
   }
   .slide__text {
@@ -66,15 +114,26 @@
     p {
       margin: 0;
     }
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
+    
     .text-slide__line_1 {
       font-size: 52.1314px;
       line-height: 100%;
-
+      
       @media (max-width: 1600px) {
         font-size: 38.1314px;
       }
       @media (max-width: 1366px) {
         font-size: 31.2135px;
+      }
+      @media (max-width: 768px) {
+        font-size: 45.2264px;
+      }
+      @media (max-width: 425px) {
+        font-size: 21.0194px;
       }
     }
     .text-slide__line_2 {
@@ -89,6 +148,12 @@
       @media (max-width: 1366px) {
         font-size: 47.842px;
       }
+      @media (max-width: 768px) {
+        font-size: 69.3201px;
+      }
+      @media (max-width: 425px) {
+        font-size: 32.2172px;
+      }
     }
     .text-slide__line_3 {
       font-size: 79.9036px;
@@ -102,6 +167,12 @@
       }
       @media (max-width: 1366px) {
         font-size: 47.842px;
+      }
+      @media (max-width: 768px) {
+        font-size: 69.3201px;
+      }
+      @media (max-width: 425px) {
+        font-size: 32.2172px;
       }
     }
   }

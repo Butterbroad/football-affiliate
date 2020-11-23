@@ -14,8 +14,20 @@
       max-width: 1025px;
       padding: 0 80px;
     }
+    @media (max-width: 768px) {
+      align-items: flex-start;
+      justify-content: center;
+      padding: 17% 80px;
+    }
+    @media (max-width: 640px) {
+      padding: 20% 40px;
+    }
+    @media (max-width: 425px) {
+      padding: 10% 30px;
+    }
   }
   .images-slide {
+
     .images-slide__pic_1 {
       max-width: 653px;
       width: 100%;
@@ -35,6 +47,25 @@
         top: 50%;
         transform: translate(0,-50%);
       }
+      @media (max-width: 800px) {
+        top: 50%;
+        transform: translate(0,-50%);
+      }
+      @media (max-width: 768px) {
+        max-width: 317px;
+        right: 50%;
+        transform: translate(30%, -25%);
+      }
+      @media (max-width: 640px) {
+        right: 45%;
+      }
+      @media (max-width: 425px) {
+        max-width: 220px;
+      }
+      @media (max-width: 320px) {
+        max-width: 175px;
+        top: 55%;
+      }
     }
     .images-slide__pic_2 {
       max-width: 1031px;
@@ -53,6 +84,28 @@
       @media (max-width: 1024px) and (min-height: 1365px) {
         top: 25%;
       }
+      @media (max-width: 800px) {
+        top: 15%;
+        right: -15%;
+      }
+      @media (max-width: 768px) {
+        max-width: 503px;
+        right: 17%;
+        top: 35%;
+      }
+      @media (max-width: 640px) {
+        right: 8%;
+      }
+      @media (max-width: 425px) {
+        max-width: 380px;
+        right: 5%;
+      }
+      @media (max-width: 360px) {
+        right: 0;
+      }
+      @media (max-width: 320px) {
+        max-width: 279px;
+      }
     }
   }
   .slide__text {
@@ -63,6 +116,11 @@
     p {
       margin: 0;
     }
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
+    
     .text-slide__line_1 {
       font-size: 82.4456px;
       line-height: 100%;
@@ -72,6 +130,12 @@
       }
       @media (max-width: 1366px) {
         font-size: 53.0155px;
+      }
+      @media (max-width: 768px) {
+        font-size: 65.2671px;
+      }
+      @media (max-width: 425px) {
+        font-size: 33.3663px;
       }
     }
     .text-slide__line_2 {
@@ -92,6 +156,12 @@
       @media (max-width: 1366px) {
         font-size: 125.36px;
       }
+      @media (max-width: 768px) {
+        font-size: 154.33px;
+      }
+      @media (max-width: 425px) {
+        font-size: 78.8975px;
+      }
     }
     .text-slide__line_3 {
       font-size: 48.5258px;
@@ -102,6 +172,12 @@
       }
       @media (max-width: 1366px) {
         font-size: 31.2038px;
+      }
+      @media (max-width: 768px) {
+        font-size: 38.4149px;
+      }
+      @media (max-width: 425px) {
+        font-size: 19.6387px;
       }
     }
   }

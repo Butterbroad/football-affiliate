@@ -14,6 +14,17 @@
       max-width: 1025px;
       padding: 0 80px;
     }
+    @media (max-width: 768px) {
+      align-items: flex-start;
+      justify-content: center;
+      padding: 17% 80px;
+    }
+    @media (max-width: 640px) {
+      padding: 20% 40px;
+    }
+    @media (max-width: 425px) {
+      padding: 10% 30px;
+    }
   }
   .images-slide {
     .images-slide__pic_1 {
@@ -36,6 +47,30 @@
       }
       @media (max-width: 1024px) and (min-height: 1365px) {
         top: 25%;
+      }
+      @media (max-width: 800px) {
+        top: 15%;
+        right: -15%;
+      }
+      @media (max-width: 768px) {
+        max-width: 490px;
+        top: 32%;
+        right: 15%;
+      }
+      @media (max-width: 640px) {
+        right: 8%;
+      }
+      @media (max-width: 425px) {
+        max-width: 360px;
+        right: 4%;
+      }
+      @media (max-width: 360px) {
+        right: 0;
+        top: 25%;
+      }
+      @media (max-width: 320px) {
+        max-width: 300px;
+        top: 30%;
       }
     }
     .images-slide__pic_2 {
@@ -61,6 +96,24 @@
         top: 25%;
         right: -10%;
       }
+      @media (max-width: 800px) {
+        top: 20%;
+        right: -30%;
+      }
+      @media (max-width: 768px) {
+        max-width: 621px;
+        top: 35%;
+        right: 10%;
+      }
+      @media (max-width: 640px) {
+        right: 0;
+      }
+      @media (max-width: 425px) {
+        right: -3%;
+      }
+      @media (max-width: 320px) {
+        max-width: 340px;
+      }
     }
   }
   .slide__text {
@@ -71,6 +124,11 @@
     p {
       margin: 0;
     }
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
+
     .text-slide__line_1 {
       font-size: 54.8723px;
       line-height: 100%;
@@ -81,6 +139,12 @@
       @media (max-width: 1366px) {
         font-size: 31.9528px;
       }
+      @media (max-width: 768px) {
+        font-size: 47.0627px;
+      }
+      @media (max-width: 425px) {
+        font-size: 24.1272px;
+      }
     }
     .text-slide__line_2 {
       font-size: 194.95px;
@@ -89,6 +153,7 @@
       text-shadow: 0px 0px 277.067px #00FF41, 0px 0px 62.5635px #0CFC4F;
       position: relative;
       margin-left: -5px;
+
       span {
         position: absolute;
         top: 15%;
@@ -101,6 +166,12 @@
         @media (max-width: 1366px) {
           font-size: 72.9578px;
         }
+        @media (max-width: 768px) {
+          font-size: 107.458px;
+        }
+        @media (max-width: 425px) {
+          font-size: 55.0897px;
+        }
       }
 
       @media (max-width: 1600px) {
@@ -109,6 +180,12 @@
       @media (max-width: 1366px) {
         font-size: 113.521px;
       }
+      @media (max-width: 768px) {
+        font-size: 167.204px;
+      }
+      @media (max-width: 425px) {
+        font-size: 85.719px;
+      }
     }
     .text-slide__line_3 {
       font-size: 38.5258px;
@@ -116,6 +193,13 @@
 
       @media (max-width: 1366px) {
         font-size: 28.2571px;
+      }
+      @media (max-width: 768px) {
+        font-size: 41.6195px;
+        margin-top: -5%;
+      }
+      @media (max-width: 425px) {
+        font-size: 21.3367px;
       }
     }
   }

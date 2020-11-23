@@ -4,6 +4,10 @@
   left: 0;
   width: 100%;
   z-index: 10;
+
+  @media (max-width: 425px) {
+    position: relative;
+  }
   // .footer__wrapper
 
   &__wrapper {
@@ -59,11 +63,33 @@
       background: #75FF33;
       border: 3px solid #75FF33;
     }
+    animation: btn 8s ease forwards;
 
     @media (max-width: 1366px) {
       max-width: 286px;
       height: 51px;
       font-size: 18px;
+    }
+    @media (max-width: 768px) {
+      max-width: 398px;
+      font-size: 25.0286px;
+      height: 71px;
+    }
+    @media (max-width: 425px) {
+      max-width: 234px;
+      font-size: 14.7601px;
+      height: 42px;
+    }
+  }
+  @keyframes btn {
+    0% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }
