@@ -100,9 +100,19 @@ const navigationLinkFive = document.querySelector('.navigationLinkFive');
 const navigationLinkSix = document.querySelector('.navigationLinkSix');
 
 //slide 1
-const textLine1 = document.querySelector('.slide-one__text-line_1');
-const textLine2 = document.querySelector('.slide-one__text-line_2');
-const textLine3 = document.querySelector('.slide-one__text-line_3');
+const slideOneTextLineOne = document.querySelector('.slide-one__text-line_1');
+const slideOneTextLineTwo = document.querySelector('.slide-one__text-line_2');
+const slideOneTextLineThree = document.querySelector('.slide-one__text-line_3');
+
+//slide 2
+const slideTwoTextLineOne = document.querySelector('.slide-two__text-line_1');
+const slideTwoTextLineTwo = document.querySelector('.slide-two__text-line_2');
+const slideTwoTextLineThree = document.querySelector('.slide-two__text-line_3');
+
+//slide 3
+const slideThreeTextLineOne = document.querySelector('.slide-three__text-line_1');
+const slideThreeTextLineTwo = document.querySelector('.slide-three__text-line_2');
+const slideThreeTextLineThree = document.querySelector('.slide-three__text-line_3');
 
 
 
@@ -124,10 +134,20 @@ langItems.forEach(item => {
     navigationLinkFive.textContent = translate[attr].navigationLinkFive;
     navigationLinkSix.textContent = translate[attr].navigationLinkSix;
 
-    //slide one
-    textLine1.textContent = translate[attr].slideOneTextLineOne;
-    textLine2.textContent = translate[attr].slideOneTextLineTwo;
-    textLine3.textContent = translate[attr].slideOneTextLineThree;
+    //slide 1
+    slideOneTextLineOne.textContent = translate[attr].slideOneTextLineOne;
+    slideOneTextLineTwo.textContent = translate[attr].slideOneTextLineTwo;
+    slideOneTextLineThree.textContent = translate[attr].slideOneTextLineThree;
+
+    //slide 2
+    slideTwoTextLineOne.textContent = translate[attr].slideTwoTextLineOne;
+    slideTwoTextLineTwo.innerHTML = translate[attr].slideTwoTextLineTwo;
+    slideTwoTextLineThree.textContent = translate[attr].slideTwoTextLineThree;
+
+    //slide 3
+    slideThreeTextLineOne.textContent = translate[attr].slideThreeTextLineOne;
+    slideThreeTextLineTwo.innerHtml = translate[attr].slideThreeTextLineTwo;
+    slideThreeTextLineThree.textContent = translate[attr].slideThreeTextLineThree;
 
 
   });

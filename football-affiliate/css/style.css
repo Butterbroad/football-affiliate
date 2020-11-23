@@ -884,6 +884,7 @@ input:focus::placeholder {
 .slide-three .slide__text .text-slide__line_1 {
   font-size: 54.8723px;
   line-height: 100%;
+  text-transform: uppercase;
 }
 
 .slide-three .slide__text .text-slide__line_2 {
@@ -905,6 +906,7 @@ input:focus::placeholder {
 .slide-three .slide__text .text-slide__line_3 {
   font-size: 38.5258px;
   line-height: 100%;
+  margin-top: -5%;
 }
 
 .slide-four .slide__wrapper {
@@ -1985,7 +1987,6 @@ input:focus::placeholder {
 
   .slide-three .slide__text .text-slide__line_3 {
     font-size: 41.6195px;
-    margin-top: -5%;
   }
 
   .slide-four .slide__wrapper {
