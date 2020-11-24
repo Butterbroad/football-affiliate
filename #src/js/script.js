@@ -44,14 +44,45 @@ const swiper = new Swiper('.swiper-container', {
   loop: false,
   grabCursor: true,
   spaceBetween: 300,
+  arrows: false,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination, .swiper-dots',
     clickable: true,
     renderBullet: function (index, className) {
       return `<span class="${className} ${classNames[index]}">${menu[index]}</span>`;
     },
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    769: {
+      arrows: true,
+    },
+  },
+  on: {
+    init: function () {
+      checkArrow();
+    },
+    resize: function () {
+      checkArrow();
+    }
+  }
 });
+
+function checkArrow() {
+  const swiperPrev = document.querySelector('.swiper-button-prev');
+  const swiperNext = document.querySelector('.swiper-button-next');
+  if (window.innerWidth < 769) {
+    console.log('Success', window.innerWidth);
+    swiperPrev.style.display = 'block';
+    swiperNext.style.display = 'block';
+  } else {
+    swiperPrev.style.display = 'none';
+    swiperNext.style.display = 'none';
+  }
+}
 
 const scrollableBlocks = document.querySelectorAll('.tabs__content-wrapper');
 scrollableBlocks.forEach(elem => {
